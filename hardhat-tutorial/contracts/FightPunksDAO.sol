@@ -99,7 +99,7 @@ contract FightPunksDAO is Ownable {
         // Set the proposal's voting deadline to be (current time + 5 minutes)
         proposal.deadline = block.timestamp + 5 minutes;
         numProposals++;
-        return numProposals--;
+        return numProposals - 1;
     }
 
     // Create a modifier which only allows a function to be
